@@ -8,8 +8,13 @@ fgt runs any command for you and exits with exitcode 1 when the child process se
 ### Usage
 Some examples:
 
-`fgt echo` will return successfully
+`fgt true` will return successfully
 
-`fgt echo hi` will return with exitcode 1
+`fgt false` will return with exitcode 1
 
-`fgt gofmt -l <yourpackage>` will return with exitcode 1 when gofmt needs something changed
+`fgt echo hi` will return with exitcode 1 (even though echo returned with exitcode 0)
+
+`fgt gofmt -l <yourpackage>` will return with exitcode 1 when gofmt indicates something must be formatted diferently
+
+### History
+This command was created to make sure jenkins will complain when gofmt needs something formatted.
