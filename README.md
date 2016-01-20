@@ -2,7 +2,7 @@
 fgt runs any command for you and exits with exitcode 1 when the child process sent anythingto stdout or stderr
 
 ### Installation
-`go install github.com/GeertJohan/fgt`
+`go get github.com/GeertJohan/fgt`
 
 
 ### Usage
